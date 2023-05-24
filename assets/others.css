@@ -37,3 +37,9 @@
 .no-margin {
   margin: 0;
 }
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 9px;
+}

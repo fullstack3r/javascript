@@ -8,11 +8,14 @@
     <link type="text/css" rel="stylesheet" href="../../assets/styles.css" />
     <link type="text/css" rel="stylesheet" href="../../assets/form.css" />
     <link type="text/css" rel="stylesheet" href="../../assets/utils.css" />
+    <link type="text/css" rel="stylesheet" href="../../assets/others.css" />
   </head>
   <body class="flex center">
     <form id="project-form" class="box">
       <label class="mi-label" for="name">Nombre</label>
       <input type="text" name="name" id="name" placeholder="Nombre" />
+      <label class="mi-label" for="name">Fecha de creacion</label>
+      <input type="date" name="createdAt" id="created-at" placeholder="Fecha de creacion" />
       <label class="mi-label" for="description">Descripción</label>
       <textarea
         name="description"
@@ -28,8 +31,13 @@
         <option value="completed">Terminado</option>
         <option value="canceled">Cancelado</option>
       </select>
-      <div id="actions">
-        <button id="btn-submit">Registrar</button>
+      <label class="mi-label" for="cover"> Portada </label>
+      <label for="cover">
+        <input type="file" name="cover" id="cover" hidden />
+        <img id="project-image" class="project-image" src="/assets/images/no-image.png" />
+      </label>
+      <div class="flex gap-1" id="actions">
+        <button id="btn-submit" onclick="createProject(event)">Registrar</button>
       </div>
     </form>
     <script src="scripts/form.js"></script>
