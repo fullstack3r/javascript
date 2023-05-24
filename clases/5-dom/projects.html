@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link type="text/css" rel="stylesheet" href="../../assets/styles.css" />
+    <link type="text/css" rel="stylesheet" href="../../assets/form.css" />
+    <link type="text/css" rel="stylesheet" href="../../assets/table.css" />
+    <link type="text/css" rel="stylesheet" href="../../assets/utils.css" />
+    <link type="text/css" rel="stylesheet" href="../../assets/others.css" />
+  </head>
+  <body class="flex flex-row center gap-1">
+    <form id="project-form" class="box" onsubmit="createProject(event)">
+      <label class="mi-label" for="name">Nombre</label>
+      <input type="text" name="name" id="name" placeholder="Nombre" />
+      <label class="mi-label" for="description">Descripción</label>
+      <textarea
+        name="description"
+        id="description"
+        cols="30"
+        rows="10"
+        placeholder="Descripción"
+      ></textarea>
+      <label class="mi-label" for="responsible">Responsable</label>
+      <input
+        type="text"
+        name="responsible"
+        id="responsible"
+        placeholder="Responsable"
+      />
+      <label class="mi-label" for="status">Estado</label>
+      <select name="status" id="status">
+        <option value="pending">Pendiente</option>
+        <option value="in-progress">En progreso</option>
+        <option value="completed">Terminado</option>
+        <option value="canceled">Cancelado</option>
+      </select>
+      <button id="btn-submit">Registrar</button>
+    </form>
+    <table class="box">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Responsable</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="projects"></tbody>
+    </table>
+    <script src="exercises/projects.js"></script>
+  </body>
+</html>

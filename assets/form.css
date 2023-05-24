@@ -1,0 +1,30 @@
+form {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 300px;
+}
+
+label {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  padding: 0 0.2rem;
+  font-weight: bolder;
+}
+
+input,
+select,
+textarea {
+  margin-bottom: 1rem;
+  border: 1px solid #2222;
+  border-radius: 6px;
+  width: 100%;
+  padding: 1rem;
+}
+
+span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}

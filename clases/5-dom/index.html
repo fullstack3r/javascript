@@ -5,20 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
-    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <link type="text/css" rel="stylesheet" href="../../assets/styles.css" />
+    <link type="text/css" rel="stylesheet" href="../../assets/form.css" />
+    <link type="text/css" rel="stylesheet" href="../../assets/utils.css" />
+    <link type="text/css" rel="stylesheet" href="../../assets/others.css" />
   </head>
-  <body>
-    <div class="container">
+  <body class="flex center">
+    <div class="flex center gap-1">
       <span id="mispan" class="rect"> Mi span! </span>
-      <div class="container-row">
-        <input id="mi-input" type="password" />
-        <button id="show-button">🤔</button>
+      <div class="flex flex-row gap-1 center">
+        <input class="no-margin" id="mi-input" type="password" />
+        <button class="btn-mini" id="show-button">🤔</button>
       </div>
 
       <button id="boton">Mi boton</button>
     </div>
+    <div id="content" class="flex center">
+
+    </div>
+
     <script src="scripts/intro.js"></script>
-    <!-- <script src="scripts/events.js"></script> -->
-    <!-- <script src="scripts/manipulation.js"></script> -->
+    <script src="scripts/events.js"></script>
+    <script src="scripts/manipulation.js"></script>
+    <script src="scripts/creation.js"></script>
   </body>
 </html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link type="text/css" rel="stylesheet" href="../../assets/styles.css" />
+    <link type="text/css" rel="stylesheet" href="../../assets/form.css" />
+    <link type="text/css" rel="stylesheet" href="../../assets/utils.css" />
+  </head>
+  <body class="flex center">
+    <form id="project-form" class="box">
+      <label class="mi-label" for="name">Nombre</label>
+      <input type="text" name="name" id="name" placeholder="Nombre" />
+      <label class="mi-label" for="description">Descripción</label>
+      <textarea
+        name="description"
+        id="description"
+        cols="30"
+        rows="10"
+        placeholder="Descripción"
+      ></textarea>
+      <label class="mi-label" for="status">Estado</label>
+      <select name="status" id="status">
+        <option value="pending">Pendiente</option>
+        <option value="in-progress">En progreso</option>
+        <option value="completed">Terminado</option>
+        <option value="canceled">Cancelado</option>
+      </select>
+      <div id="actions">
+        <button id="btn-submit">Registrar</button>
+      </div>
+    </form>
+    <script src="scripts/form.js"></script>
+  </body>
+</html>

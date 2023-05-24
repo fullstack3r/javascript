@@ -1,0 +1,22 @@
+table {
+  border-collapse: collapse;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #333;
+  color: #fff;
+}
+
+table,
+th,
+td {
+  padding: 0.875rem;
+}
+
+td {
+  text-align: center;
+  border: 1px solid #3331;
+  background-color: white;
+}
