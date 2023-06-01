@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Currencies</title>
+  </head>
+  <body
+    class="antialiased font-sans p-12 flex items-center justify-center w-full h-full"
+  >
+    <div class="rounded-lg overflow-hidden">
+      <table>
+        <thead>
+          <tr class="bg-gray-800 text-white">
+            <th class="p-2">Currency</th>
+            <th class="p-2">Name</th>
+            <th class="p-2">Min Size</th>
+          </tr>
+        </thead>
+        <tbody id="table-body" class="bg-gray-200">
+          
+        </tbody>
+      </table>
+    </div>
+
+    <script src="render.js"></script>
+    <script src="currencies.js"></script>
+  </body>
+</html>
